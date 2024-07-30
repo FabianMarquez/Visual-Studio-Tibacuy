@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>{{ message }}</h1>
+        <p>Bienvenid@ a mi página</p>
+
+        <img src="{{ url_for('static', filename='images.png') }}" alt="Descripción de la imagen" class="imagen">
+        
+        <form action="/submit" method="POST">
+            <input type="text" name="user_input" placeholder="¿Cuál es tu nombre?" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+
+</html>
