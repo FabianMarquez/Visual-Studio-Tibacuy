@@ -1,0 +1,13 @@
+{
+    "name": "Python 3.9.16",
+    "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
+    "features": {
+        "python": {
+            "version": "3.9.16"
+        }
+    },
+    "postCreateCommand": "pip install kivy torch torchvision torchaudio",
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    }
+}
