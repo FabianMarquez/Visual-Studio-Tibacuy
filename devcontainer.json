@@ -1,13 +1,13 @@
 {
-    "name": "Python 3.9.16",
+    "name": "Python 3.9.16 with OpenCV",
     "image": "mcr.microsoft.com/vscode/devcontainers/python:3.9",
     "features": {
         "python": {
             "version": "3.9.16"
         }
     },
-    "postCreateCommand": "pip install kivy torch torchvision torchaudio",
+    "postCreateCommand": "pip install kivy torch torchvision torchaudio opencv-python",
     "settings": {
         "python.pythonPath": "/usr/local/bin/python"
     }
-}
+}}
